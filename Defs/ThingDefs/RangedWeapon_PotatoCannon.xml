@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DamageDef ParentName="LocalInjuryBase" Name="PotatoDamageBase">
+    <defName>PotatoDamage</defName>
+    <label>potato</label>
+    <workerClass>DamageWorker_Blunt</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been tatered to death.</deathMessage>
+    <hediff>Crush</hediff>
+    <hediffSkin>Bruise</hediffSkin>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Blunt</armorCategory>
+    <bluntInnerHitFrequency>0.4</bluntInnerHitFrequency>
+    <bluntInnerHitConverted>
+      <min>0.1</min>
+      <max>0.2</max>
+    </bluntInnerHitConverted>
+    <bluntInnerHitAdded>
+      <min>0.2</min>
+      <max>0.35</max>
+    </bluntInnerHitAdded>
+  </DamageDef>
+  
+   <ThingDef Name="BasePotato" Abstract="True">
+    <category>Projectile</category>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <thingClass>Bullet</thingClass>
+    <label>potato</label>
+    <useHitPoints>False</useHitPoints>
+    <neverMultiSelect>True</neverMultiSelect>
+    <graphicData>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+  </ThingDef> 
+  
+   
+  <ThingDef ParentName="BasePotato">
+    <defName>Potato_PotatoCannon</defName>
+    <label>potato cannon potato</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/PotatoCannonPotato</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>PotatoDamage</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <speed>50</speed>
+    </projectile>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_PotatoCannon</defName>
+    <label>potato cannon</label>
+    <description>It's a cannon. It shoots potatoes.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/PotatoCannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>25000</WorkToMake>
+      <Mass>4</Mass>
+      <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.86</AccuracyShort>
+      <AccuracyMedium>0.86</AccuracyMedium>
+      <AccuracyLong>0.88</AccuracyLong>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+      <Weapon_Bulk>2.0</Weapon_Bulk>
+    </statBases>
+    <costList>
+      <Steel>40</Steel>
+	  <RawPotatoes>50</RawPotatoes>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Potato_PotatoCannon</defaultProjectile>
+        <warmupTime>2.0</warmupTime>
+        <range>35</range>
+        <soundCast>ShotSniperRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>1</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags>
+      <li>PotatoCannon</li>
+    </weaponTags>
+  </ThingDef>
+  
+</Defs>
