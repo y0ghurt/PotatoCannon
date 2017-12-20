@@ -47,7 +47,7 @@
     </graphicData>
     <projectile>
       <damageDef>PotatoDamage</damageDef>
-      <damageAmountBase>20</damageAmountBase>
+      <damageAmountBase>19</damageAmountBase>
       <speed>50</speed>
     </projectile>
   </ThingDef>
@@ -86,7 +86,7 @@
         <defaultProjectile>Potato_PotatoCannon</defaultProjectile>
         <warmupTime>2.0</warmupTime>
         <range>35</range>
-        <soundCast>ShotSniperRifle</soundCast>
+        <soundCast>PotatoCannonOomph</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>1</muzzleFlashScale>
       </li>

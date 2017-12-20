@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><Defs>
+<Defs>
+  <SoundDef>
+    <defName>PotatoCannonOomph</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Sounds/PotatoCannon</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>77.05883</min>        
+          <max>77.05883</max>
+        </volumeRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+</Defs>
