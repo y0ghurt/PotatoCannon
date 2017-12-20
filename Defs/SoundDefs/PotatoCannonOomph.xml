@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><Defs>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+
   <SoundDef>
     <defName>PotatoCannonOomph</defName>  
     <context>MapOnly</context>
@@ -9,7 +10,7 @@
       <li>
         <grains>
           <li Class="AudioGrain_Folder">
-            <clipFolderPath>Sounds/PotatoCannon</clipFolderPath>
+            <clipPath>PotatoCannon/PotatoCannonOomph</clipPath>
           </li>
         </grains>      
         <volumeRange>
@@ -20,4 +21,5 @@
       </li>
     </subSounds>
   </SoundDef>
+  
 </Defs>
