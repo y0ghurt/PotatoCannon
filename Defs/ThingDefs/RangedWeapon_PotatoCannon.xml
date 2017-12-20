@@ -47,7 +47,7 @@
     </graphicData>
     <projectile>
       <damageDef>PotatoDamage</damageDef>
-      <damageAmountBase>19</damageAmountBase>
+      <damageAmountBase>29</damageAmountBase>
       <speed>40</speed>
     </projectile>
   </ThingDef>
@@ -66,13 +66,13 @@
       <researchPrerequisite>Gunsmithing</researchPrerequisite>
     </recipeMaker>
     <statBases>
-      <WorkToMake>20000</WorkToMake>
+      <WorkToMake>22222</WorkToMake>
       <Mass>4</Mass>
-      <AccuracyTouch>0.50</AccuracyTouch>
-      <AccuracyShort>0.86</AccuracyShort>
-      <AccuracyMedium>0.86</AccuracyMedium>
-      <AccuracyLong>0.88</AccuracyLong>
-      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.95</AccuracyShort>
+      <AccuracyMedium>0.95</AccuracyMedium>
+      <AccuracyLong>0.89</AccuracyLong>
+      <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
       <Weapon_Bulk>2.0</Weapon_Bulk>
     </statBases>
     <costList>
@@ -88,7 +88,7 @@
         <range>35</range>
         <soundCast>PotatoCannonOomph</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
-        <muzzleFlashScale>1</muzzleFlashScale>
+        <muzzleFlashScale>5</muzzleFlashScale>
       </li>
     </verbs>
     <tools>
