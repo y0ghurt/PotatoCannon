@@ -63,10 +63,10 @@
     </graphicData>
     <soundInteract>InteractRifle</soundInteract>
     <recipeMaker>
-      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
     </recipeMaker>
     <statBases>
-      <WorkToMake>25000</WorkToMake>
+      <WorkToMake>20000</WorkToMake>
       <Mass>4</Mass>
       <AccuracyTouch>0.50</AccuracyTouch>
       <AccuracyShort>0.86</AccuracyShort>
