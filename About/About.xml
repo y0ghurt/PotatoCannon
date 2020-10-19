@@ -3,7 +3,12 @@
 <ModMetaData>
   <name>Potato Cannon</name>
   <author>Y0ghurt</author>
-  <targetVersion>0.18.1722</targetVersion>
+  <packageId>Y0ghurt.PotatoCannon</packageId>
+  <supportedVersions>
+    <li>1.0</li>
+    <li>1.1</li>
+	<li>1.2</li>
+  </supportedVersions>
   <url>https://github.com/y0ghurt/PotatoCannon</url>
   <description>
 &lt;b&gt;V1.00&lt;/b&gt;
